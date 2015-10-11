@@ -1,0 +1,47 @@
+{
+  "name": "gulp-modular-karma",
+  "version": "0.0.0",
+  "description": "Boilerplate gulp tasks for unit testing with gulp-modular.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ONE-LOGIC/gulp-modular-karma.git"
+  },
+  "keywords": [
+    "gulp",
+    "karma"
+  ],
+  "contributors": [
+    {
+      "name": "Max Klenk",
+      "email": "max@klenk.biz"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ONE-LOGIC/gulp-modular-karma/issues"
+  },
+  "homepage": "https://github.com/ONE-LOGIC/gulp-modular-karma",
+  "dependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.10",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-coverage": "^0.5.2",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-jasmine": "^0.3.2",
+    "karma-junit-reporter": "^0.3.7",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-sourcemap-loader": "^0.3.6",
+    "phantomjs": "^1.9.18",
+    "run-sequence": "^1.1.1"
+  },
+  "peerDependencies": {
+    "gulp-modular": "*"
+  }
+}
