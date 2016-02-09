@@ -13,13 +13,14 @@ module.exports = function (config) {
       // vendor
       'dist/js/vendor*.js',
       // test dependency
-      'app/bower_components/angular-mocks/angular-mocks.js',
+      'bower_components/angular-mocks/angular-mocks.js',
 
-      // app
+      // app, templates and config
       'dist/js/scripts*.js',
 
-      // tests
-      'app/components/**/*_test.js'
+      // updated app files and tests
+      'app/components/app.js',
+      'app/components/**/*.js'
     ],
 
     // list of files / patterns to exclude
@@ -68,7 +69,7 @@ module.exports = function (config) {
       // do not include tests or libraries
       // (these files will be instrumented by Istanbul)
 
-      'dist/js/scripts*.js': ['sourcemap', 'coverage']
+      'app/components/**/!(test*)/!(*test|*mock).js': ['coverage']
     },
 
     // optionally, configure the reporter

@@ -5,8 +5,8 @@ var runSequence = require('run-sequence');
 
 module.exports = function(gulp, config) {
 
-  var configFile = config.karma.src || 'karma.conf.js';
-  var browsers = config.karma.browsers ||['PhantomJS', 'Firefox', 'Chrome'];
+  var configFile = config.karma.src || './karma.conf.js';
+  var browsers = config.karma.browsers || ['PhantomJS', 'Firefox', 'Chrome'];
 
   gulp.task('karma', function (done) {
     new Server({

@@ -1,1 +1,9 @@
-node_modules
+# OS X cache
+**/.DS_Store
+
+# JetBrains IDE project files
+.idea/
+*.iml
+
+# node modules directory
+node_modules/
