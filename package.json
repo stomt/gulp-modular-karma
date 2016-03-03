@@ -1,6 +1,6 @@
 {
   "name": "gulp-modular-karma",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Boilerplate gulp tasks for unit testing with gulp-modular.",
   "main": "index.js",
   "scripts": {
