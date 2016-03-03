@@ -12,7 +12,7 @@ module.exports = function(gulp, config) {
     new Server({
       configFile: configFile,
       singleRun: true
-    }, done).start();
+    }, done()).start();
   });
 
   gulp.task('karma:watch', function (done) {
@@ -20,7 +20,7 @@ module.exports = function(gulp, config) {
       configFile: configFile,
       singleRun: false,
       autoWatch: true
-    }, done).start();
+    }, done()).start();
   });
 
   gulp.task('karma:all', function (done) {
@@ -28,7 +28,7 @@ module.exports = function(gulp, config) {
       configFile: configFile,
       browsers: browsers,
       singleRun: true
-    }, done).start();
+    }, done()).start();
   });
 
   gulp.task('test', function () {
