@@ -1,4 +1,4 @@
-# gulp-modular-karma [![npm version](https://badge.fury.io/js/gulp-modular-karma.svg)](https://www.npmjs.com/package/gulp-modular-karma)
+# gulp-modular-karma [![npm version](https://badge.fury.io/js/gulp-modular-karma.svg)](https://www.npmjs.com/package/gulp-modular-karma) [![Dependency Status](https://gemnasium.com/ONE-LOGIC/gulp-modular-karma.svg)](https://gemnasium.com/ONE-LOGIC/gulp-modular-karma)
 
 Modular extension to run unit tests in a [gulp-modular](https://github.com/ONE-LOGIC/gulp-modular) project.
 
