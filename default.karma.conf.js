@@ -8,6 +8,17 @@ module.exports = function (config) {
     // testing framework to use (jasmine/mocha/qunit/...)
     frameworks: ['jasmine'],
 
+    // plugins to use
+    //plugins: [
+    //  'karma-jasmine',
+    //  'karma-coverage',
+    //  'karma-junit-reporter',
+    //  'karma-babel-preprocessor',
+    //  'karma-phantomjs-launcher',
+    //  'karma-chrome-launcher',
+    //  'karma-firefox-launcher'
+    //],
+
     // list of files / patterns to load in the browser
     files: [
       // vendor
@@ -70,7 +81,23 @@ module.exports = function (config) {
       // (these files will be instrumented by Istanbul)
 
       'app/components/**/!(test*)/!(*test|*mock).js': ['coverage']
+
+      // source files, that should be preprocessed with babel
+      //'app/components/**/*.js': ['babel']
     },
+
+    // optionally, configure babel preprocessor
+    //babelPreprocessor: {
+    //  options: {
+    //    sourceMap: 'inline'
+    //  },
+    //  filename: function(file) {
+    //    return file.originalPath.replace(/\.js$/, '.es5.js');
+    //  },
+    //  sourceFileName: function(file) {
+    //    return file.originalPath;
+    //  }
+    //},
 
     // optionally, configure the reporter
     coverageReporter: {
